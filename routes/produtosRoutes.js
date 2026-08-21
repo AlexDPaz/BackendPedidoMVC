@@ -6,6 +6,7 @@ router.post('/produtos', ProdutoController.criar);
 router.get('/produtos', ProdutoController.listarTodos);
 router.get('/produtos/:id', ProdutoController.listarUm);
 router.put('/produtos/:id', ProdutoController.atualizar);
-router.delete('/produtos/;id', ProdutoController.deletar);
+// CORRIGIDO: Alterado de '/produtos/;id' para '/produtos/:id'
+router.delete('/produtos/:id', ProdutoController.deletar); 
 
 module.exports = router;

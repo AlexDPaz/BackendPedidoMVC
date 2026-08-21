@@ -1,0 +1,248 @@
+/* =========================================
+   Reset e Configurações Globais
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* =========================================
+   Estilos da Tela Principal (Usuários)
+   ========================================= */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.page-header h2 {
+    color: #2c3e50;
+}
+
+.page-header p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #34495e;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-acao {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: opacity 0.2s;
+}
+
+.btn-acao:hover {
+    opacity: 0.8;
+}
+
+.btn-alterar {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-excluir {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* =========================================
+   Estilos para Telas de Login e Cadastro 
+   ========================================= */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-card h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.login-card .subtitle {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+}
+
+.login-card button[type="submit"] {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-card button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.btn-cadastro {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.btn-cadastro:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.link-text {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+.link-text a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link-text a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}

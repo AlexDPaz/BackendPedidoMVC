@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="StylerPrincipal.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>Sistema</h1>
+        <button id="btnSair" onclick="sair()">
+            Sair
+        </button>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <div>
+                <h2>Usuários</h2>
+                <p>Usuários cadastrados no sistema</p>
+            </div>
+        </div>
+
+        <p id="mensagem"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaUsuarios">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

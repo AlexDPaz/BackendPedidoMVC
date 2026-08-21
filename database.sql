@@ -16,6 +16,13 @@ nome varchar(100),
 preco decimal(10, 2)
 );
 
+CREATE TABLE usuario(
+   id SERIAL PRIMARY KEY,
+   nome VARCHAR(100) NOT NULL,
+   email VARCHAR(200) UNIQUE NOT NULL,
+   senha VARCHAR(255) NOT NULL
+);
+
 Tabela Intermediária
 CREATE TABLE pedido_produtos (
     pedido_id INT REFERENCES pedidos(id) ON DELETE CASCADE,

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../StylerPrincipal.css">
+</head>
+
+<body>
+    <main class="login-container">
+        <div class="login-card">
+            <h1>Login</h1>
+            <p class="subtitle">Entre para acessar o sistema</p>
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="senha">
+                        Senha
+                    </label>
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
+                <button type="submit">
+                    Entrar
+                </button>
+                <a href="../cadastrar" class="btn-cadastro">
+                    Criar conta
+                </a>
+            </form>
+            <p id="mensagem"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

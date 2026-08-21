@@ -1,10 +1,17 @@
-const Pedido = require("../model/Pedido");
+const Pedido = require("../models/Pedido");
 
 class PedidoController{
-    async criar(req, res){
-        const {cliente, produtos} = req.body;
-        const pedido = await Pedido.criar(cliente, produtos);
-        res.json(pedido);
+    
+  async criar(req, res){
+        const { cliente_id, produtos } = req.body;
+        // Instancia a classe passando os dados para o construtor
+        const pedido = new Pedido(cliente_id, produtos);
+        try {
+            const novoPedido = await pedido.cadastrar();
+            res.json(novoPedido);
+        } catch (error) {
+            res.status(500).json({ error: error.message });
+        }
     }
 
     async listarTodos(req, res){
